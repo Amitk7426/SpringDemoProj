@@ -27,7 +27,6 @@ pipeline {
         stage('Sonar') {
             steps {
                 echo 'Sonar Scanner'
-                sleep 100
                	//def scannerHome = tool 'SonarQube Scanner 3.0'
 			    withSonarQubeEnv('SonarQube Server') {
 			    	bat 'C:/Users/Priya/Downloads/sonar-scanner-cli-4.2.0.1873-windows/sonar-scanner-4.2.0.1873-windows/bin/sonar-scanner'
